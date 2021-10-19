@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSS3 Transitions</title>
+
+        <style>
+            .button {
+                text-decoration: none;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                padding: 14px 0;
+                border: 2px solid black;
+                margin-top: 20px;
+                display: block;
+                text-align: center;
+                /* transition: all .5s ease-in; */
+            }
+
+            .button.white {
+                background-color: white;
+                color: black;
+            }
+
+            .button.dark {
+                background-color: black;
+                color: white;
+            }
+
+            .button.lg {
+                width: 248px;
+            }
+
+            .button.sm {
+                width: 148px;
+                font-size: .8em;
+            }
+
+            /* block items are center with the value 'auto' on their horizontal margin */
+
+            .button.centered {
+                margin: 10px auto
+            }
+
+            /* :hover applies related styles on the selector when it is under the cursor */
+
+            .button:hover {
+                background-color: black;
+                color: white;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <main>
+
+            <h1>CSS3 transtions</h1>
+
+            <a href="#" class="button white lg">Conócenos</a>
+            <a href="#" class="button dark sm">Conócenos</a>
+            <a href="#" class="button dark lg">Conócenos</a>
+            <a href="#" class="button white lg centered">Conócenos</a>
+
+        </main>
+
+    </body>
+
+</html>
